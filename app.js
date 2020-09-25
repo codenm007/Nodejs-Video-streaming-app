@@ -1,17 +1,17 @@
 const express = require('express')
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3000
 const fs = require('fs');
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/video/:something', function(req, res) {
+app.get('/video/:something/:filename', function(req, res) {
     if(req.params.something == "1232"){
     
         
-    const path = 'assets/1.mp4'
+    const path = `assets/${req.params.filename}`
     const stat = fs.statSync(path)
     const fileSize = stat.size
     const range = req.headers.range
