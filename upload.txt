@@ -1,0 +1,10 @@
+body undefined {
+     fieldname: 'file',
+     originalname: '1.mp4',
+     encoding: '7bit',
+     mimetype: 'video/mp4',
+     destination: 'assets/',
+     filename: 'ab3cf8e3164908f36bb1bcdb65b6e130',
+     path: 'assets/ab3cf8e3164908f36bb1bcdb65b6e130',
+     size: 14956662
+     }
